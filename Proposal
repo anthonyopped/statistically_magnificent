@@ -1,0 +1,25 @@
+Motivation
+-	Parkinson’s Disease is the second most common neurodegenerative disease, affecting roughly 1-2% of the population above age 601,2. One mutation (G2019S) in a gene called LRRK2 is the most commonly seen genetic influence on PD.  While the prevalence of PD world-wide remains relatively static, Arab populations in northern Africa surpass the expected frequency of G2019S LRRK2 mutations, and Tunisia harbors perhaps the worlds densest population of carriers2. This creates a relatively genetically-homogenous population to study, where environmental factors with other genetic anomalies influence PD susceptibility, age-at-onset, and even evolution. 
+-	We hypothesize environmental and genetic factors play a role in the onset and progression of Parkinson’s Disease in Arab-Berber populations of Tunisia.  We suspect a complex interplay of behaviours and activities to be at the core of disease manifestation and evolution, as well as a observe differences in the environmental impact of G2019S LRRK2 PD cases. 
+-	As it stands currently, little information is known about the complex interactions between genetic and environmental variables involved in PD pathogenesis and evolution. Familial forms have been identified and studied and a number of genes have been implicated. However, these studies often lack the depth of information we have available on these patients, allowing us to perform a more comprehensive analysis on the environmental impact in concert with genetics on PD etiology and evolution. 
+Dataset
+-	We are using genotyping data from ~550 PD cases and controls of Arab-Berber descent from Tunisia. This genotyping data was generated using the Affymetrix 5.0 SNP array.
+o	Characteristics include the read (A, T, C, G), the position, and rsID 
+-	We will also be using clinical and trait data available (obtained from my lab) on all the cases from this cohort (N = ~190). 
+o	For the phenotype data, there will be quantitative variables (such as the number of cigarettes smoked per day/ cups of coffee per day, scores on standardized motor and cognitive tests, etc.). 
+Aims and methodology AND Division of Labor
+-	To identify genetic markers associated with PD
+
+To assess the association between the genetic markers (A, T, C, G) and the presence of PD (Y/N) in a subject, we propose to perform exploratory analysis using contingency tables to summarize distribution of genetic markers for the PD status. A chi-square test will be performed to confirm association and we can also use a logistic regression model to assess this association.
+
+-	Identify the traits and genetic variables that influence the severity of PD.
+For the various scores on PD, we propose to use a linear model to identify the traits and modifiers that have an effect on PD. We will check for interaction effects among the covariates in the model and also perform exploratory analysis (scatter plots and contingency tables) to check for correlations among covariates. 
+-	Assess the impact of these modifiers on the progression of PD. Specifically we will compare the severity scores of PD for two age points (e.g. age 60 and 65) for identified traits from our second aim. 
+
+We propose a mixed effect model where we use the severity scores as are response variable with the chosen ages and traits as our fixed effects in the model. The individuals will be included in the model as random effects to account for the correlation in the repeated measurements.
+
+-	Using significantly significant genetic and trait modifiers from the above point, look for differences in the two types of PD: familial G2019S and idiopathic. 
+Lastly, we propose to use a linear model to assess the differences in PD scores between the familial G2019S and idiopathic groups taking into account the established genetic markers and traits that have an effect on the PD scores.
+
+1Tysnes, O., and Storstein, A. (2017). Epidemiology of Parkinson’s disease. 
+2 Bouhouce, A., et al. (2017). LRRK2 G2019S Mutation: Prevalence and Clinical Features in Moroccans with Parkinson’s Disease.
